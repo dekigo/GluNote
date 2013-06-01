@@ -8,15 +8,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Test_Input"
-        android:onClick="TestingPage"   
+        android:text="@string/Test_Input"   
     />
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Carb_Input"
-        android:onClick="CarbsPage"
     />
     
 </LinearLayout>
