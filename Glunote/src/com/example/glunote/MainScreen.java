@@ -23,13 +23,13 @@ public class MainScreen extends Activity {
     }
     
     public void TestingPage(View view1) {
-    	Intent intent1 = new Intent(this, TestingPageActivity.class);
-    	startActivity(intent1);
+    	Intent TestIntent = new Intent(this, TestingPageActivity.class);
+    	startActivity(TestIntent);
     }
     
     public void CarbsPage(View view1) {
-    	Intent intent1 = new Intent(this, CarbsPageActivity.class);
-    	startActivity(intent1);
+    	Intent CarbIntent = new Intent(this, CarbsPageActivity.class);
+    	startActivity(CarbIntent);
     }
     
 }

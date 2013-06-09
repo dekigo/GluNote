@@ -22,6 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.glunote.TestingPageActivity"
+            android:label="@string/title_activity_testing_page"
+            android:parentActivityName="com.example.glunote.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.glunote.MainScreen" />
+        </activity>
+        <activity
+            android:name="com.example.glunote.CarbsPageActivity"
+            android:label="@string/title_activity_carbs_page"
+            android:parentActivityName="com.example.glunote.MainScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.glunote.MainScreen" />
+        </activity>
     </application>
 
 </manifest>
