@@ -27,9 +27,10 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int Test_Page_Bolus_Amt=0x7f090002;
-        public static final int Test_Page_Glucose_Amt=0x7f090001;
-        public static final int action_settings=0x7f090003;
+        public static final int Carb_Amount=0x7f090001;
+        public static final int Test_Page_Bolus_Amt=0x7f090003;
+        public static final int Test_Page_Glucose_Amt=0x7f090002;
+        public static final int action_settings=0x7f090004;
         public static final int meal_spinner=0x7f090000;
     }
     public static final class layout {
@@ -44,6 +45,8 @@ public final class R {
     }
     public static final class string {
         public static final int Carb_Input=0x7f050003;
+        public static final int Carbs_Page_Carbs=0x7f05000a;
+        public static final int Carbs_Page_Meal=0x7f050009;
         public static final int Test_Input=0x7f050002;
         public static final int Test_Page_Bolus=0x7f050006;
         public static final int Test_Page_Glucose=0x7f050005;

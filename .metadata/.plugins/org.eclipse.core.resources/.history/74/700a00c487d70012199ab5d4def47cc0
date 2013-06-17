@@ -14,8 +14,7 @@
 	        android:layout_width="0dp"
 	        android:layout_weight="0.5"
 	        android:textSize="20sp"
-	        android:text="@string/Carbs_Page_Meal" 
-	    />
+	        android:text="@string/Carbs_Page_Meal" />
 	        
 	    <Spinner
 		    android:id="@+id/meal_spinner"
@@ -25,27 +24,7 @@
 	    />
     
     </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
         
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:textSize="20sp"
-            android:text="@string/Carbs_Page_Carbs" 
-        />
-        
-        <EditText android:id="@+id/Carb_Amount"
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:inputType="number"
-        />
-        
-    </LinearLayout>"
     
     
     
