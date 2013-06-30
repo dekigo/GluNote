@@ -51,15 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Enter"
-        android:onClick="Save_Carb_Entry"
-    />
-    
-    <TextView 
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:textSize="20sp"
-        android:text="@string/Total_Carbs"
-    />
+        android:onClick="SaveCarbEntry"
     
     
     

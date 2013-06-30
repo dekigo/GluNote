@@ -12,8 +12,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="Carbs_Page_Meal">Which Meal?</string>
     <string name="Carbs_Page_Carbs">Enter total carbs:</string>
-    <string name="Enter">Enter</string>
-    <string name="Total_Carbs">Carbs Today:</string>
     
     <string-array name="meal_array">
         <item>Breakfast</item>
