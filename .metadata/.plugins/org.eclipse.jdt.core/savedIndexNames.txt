@@ -1,4 +1,3 @@
 INDEX VERSION 1.126+C:\Users\Tim\Documents\GitHub\GluNote\.metadata\.plugins\org.eclipse.jdt.core
-1190852481.index
 3203951077.index
 2328323722.index
