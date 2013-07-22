@@ -15,4 +15,31 @@ public class CarbsPageDB extends SQLiteOpenHelper {
 	
 	public static final String DATABASE_NAME = "carbstable.db";
 	public static final int DATABASE_VERSION = 1;
+	
+	private static final String DATABASE_CREATE = "create table "
+		      + TABLE_CARBS + "(" 
+			  + COLUMN_ID + " integer primary key autoincrement, " 
+		      + COLUMN_TIME + " Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, "
+		      + COLUMN_MEAL + " text not null, "
+		      + COLUMN_CARBS + " real not null);";
+	
+	public CarbsPageDB(Context context) {
+		super(context, DATABASE_NAME, null, DATABASE_VERSION);
+	}
+	
+	@Override
+	public void onCreate(SQLiteDatabase database) {
+		database.execSQL(DATABASE_CREATE);
+	}
+	
+	 @Override
+	  public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	    Log.w(CarbsPageDB.class.getName(),
+	        "Upgrading database from version " + oldVersion + " to "
+	            + newVersion + ", which will destroy all old data");
+	    db.execSQL("DROP TABLE IF EXISTS " + TABLE_CARBS);
+	    onCreate(db);
+	  }
+
 }
+
