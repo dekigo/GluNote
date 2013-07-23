@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class CarbsPageDB extends SQLiteOpenHelper {
+public class CarbsPageDb extends SQLiteOpenHelper {
 	
 	public static final String TABLE_CARBS = "carbstable";
 	public static final String COLUMN_ID = "_id";
@@ -23,7 +23,7 @@ public class CarbsPageDB extends SQLiteOpenHelper {
 		      + COLUMN_MEAL + " text not null, "
 		      + COLUMN_CARBS + " real not null);";
 	
-	public CarbsPageDB(Context context) {
+	public CarbsPageDb(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 	
@@ -34,7 +34,7 @@ public class CarbsPageDB extends SQLiteOpenHelper {
 	
 	 @Override
 	  public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-	    Log.w(CarbsPageDB.class.getName(),
+	    Log.w(CarbsPageDb.class.getName(),
 	        "Upgrading database from version " + oldVersion + " to "
 	            + newVersion + ", which will destroy all old data");
 	    db.execSQL("DROP TABLE IF EXISTS " + TABLE_CARBS);

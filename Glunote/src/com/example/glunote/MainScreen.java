@@ -32,4 +32,9 @@ public class MainScreen extends Activity {
     	startActivity(CarbIntent);
     }
     
+    public void AlarmsPage(View view1) {
+    	Intent AlarmsIntent = new Intent(this, AlarmsPageActivity.class);
+    	startActivity(AlarmsIntent);
+    }
+    
 }

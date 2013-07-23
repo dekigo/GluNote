@@ -19,4 +19,11 @@
         android:onClick="CarbsPage"
     />
     
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Alarms_Button"
+        android:onClick="AlarmsPage"
+    />
+    
 </LinearLayout>

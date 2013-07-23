@@ -38,6 +38,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.glunote.MainScreen" />
         </activity>
+        <activity
+            android:name="com.example.glunote.AlarmsPageActivity"
+            android:label="@string/title_activity_alarms_page" >
+        </activity>
     </application>
 
 </manifest>

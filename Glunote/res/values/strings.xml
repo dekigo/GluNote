@@ -14,7 +14,7 @@
     <string name="Carbs_Page_Carbs">Enter total carbs:</string>
     <string name="Enter">Enter</string>
     <string name="Total_Carbs">Carbs Today:</string>
-    
+
     <string-array name="meal_array">
         <item>Breakfast</item>
         <item>Lunch</item>
@@ -22,4 +22,7 @@
         <item>Snack</item>
     </string-array>
 
+    <string name="title_activity_alarms_page">AlarmsPageActivity</string>
+    <string name="Alarms_Page_Top">Set an alarm for:</string>
+    <string name="Alarms_Button">Alarms and Reminders</string>
 </resources>
