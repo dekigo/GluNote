@@ -1,16 +1,22 @@
 package com.example.glunote;
 
 import android.os.Bundle;
-import android.app.Activity;
+import android.app.ListActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
-public class CarbsPageActivity extends Activity {
+import java.util.List;
+import java.util.Random;
+
+public class CarbsPageActivity extends ListActivity {
+	private CarbsDataSource datasource;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +31,35 @@ public class CarbsPageActivity extends Activity {
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		mealspinner.setAdapter(adapter);
+		
+		int app_Integer=10;
+		String app_String = "" +app_Integer;
+
+		TextView tot_carbs = (TextView) findViewById(R.id.Carb_Num);
+		tot_carbs.setText(app_String);
+		
+		datasource = new CarbsDataSource(this);
+	    datasource.open();
+	    
+	    List<CarbsDBEntry> values = datasource.getAllCarbEntries();
+	    
+	    ArrayAdapter<CarbsDBEntry> adapter2 = new ArrayAdapter<CarbsDBEntry>(this,
+	            android.R.layout.simple_list_item_1, values);
+	        setListAdapter(adapter2);
+	        
 	}
+	
+	 public void Save_Carb_Entry(View view) {
+		    @SuppressWarnings("unchecked")
+		    ArrayAdapter<CarbsDBEntry> adapter = (ArrayAdapter<CarbsDBEntry>) getListAdapter();
+		    CarbsDBEntry entry = null;
+		    CarbsDBEntry[] entries = new CarbsDBEntry[] {};
+		    int nextInt = new Random().nextInt(3);
+		    // Save the new entry to the database
+		    entry = datasource.CreateCarbEntry(entries[nextInt]);
+		    adapter.add(entry);
+		    adapter.notifyDataSetChanged();
+	 }
 
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
@@ -59,6 +93,18 @@ public class CarbsPageActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	protected void onResume() {
+	    datasource.open();
+	    super.onResume();
+	}
+
+	@Override
+	protected void onPause() {
+	    datasource.close();
+	    super.onPause();
 	}
 
 }

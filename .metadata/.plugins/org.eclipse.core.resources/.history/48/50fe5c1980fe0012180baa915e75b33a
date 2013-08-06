@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+	    <TextView
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.5"
+	        android:textSize="20sp"
+	        android:text="@string/Carbs_Page_Meal" 
+	    />
+	        
+	    <Spinner
+		    android:id="@+id/meal_spinner"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.5"
+	    />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="20sp"
+            android:text="@string/Carbs_Page_Carbs" 
+        />
+        
+        <EditText android:id="@+id/Carb_Amount"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:inputType="number"
+        />
+        
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter"
+        android:onClick="Save_Carb_Entry"
+    />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:textSize="20sp"
+	        android:text="@string/Total_Carbs"
+	    />
+	    
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:textSize="20sp"
+	        android:text="@int/Carb_Num"
+	    />
+	
+	</LinearLayout>
+    
+    
+    
+    
+    
+</LinearLayout>

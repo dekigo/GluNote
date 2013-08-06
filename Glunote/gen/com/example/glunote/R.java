@@ -28,11 +28,13 @@ public final class R {
     }
     public static final class id {
         public static final int AlarmPicker=0x7f090000;
-        public static final int Carb_Amount=0x7f090002;
-        public static final int Test_Page_Bolus_Amt=0x7f090004;
-        public static final int Test_Page_Glucose_Amt=0x7f090003;
-        public static final int action_settings=0x7f090005;
-        public static final int meal_spinner=0x7f090001;
+        public static final int Carb_Amount=0x7f090003;
+        public static final int Carb_Num=0x7f090004;
+        public static final int Test_Page_Bolus_Amt=0x7f090006;
+        public static final int Test_Page_Glucose_Amt=0x7f090005;
+        public static final int action_settings=0x7f090007;
+        public static final int button1=0x7f090001;
+        public static final int meal_spinner=0x7f090002;
     }
     public static final class layout {
         public static final int activity_alarms_page=0x7f030000;
@@ -47,9 +49,11 @@ public final class R {
         public static final int testing_page=0x7f080003;
     }
     public static final class string {
-        public static final int Alarms_Button=0x7f05000f;
-        public static final int Alarms_Page_Top=0x7f05000e;
+        public static final int Alarm_Setter=0x7f050011;
+        public static final int Alarms_Button=0x7f050010;
+        public static final int Alarms_Page_Top=0x7f05000f;
         public static final int Carb_Input=0x7f050003;
+        public static final int Carb_List_Title=0x7f05000d;
         public static final int Carbs_Page_Carbs=0x7f05000a;
         public static final int Carbs_Page_Meal=0x7f050009;
         public static final int Enter=0x7f05000b;
@@ -60,7 +64,7 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050008;
-        public static final int title_activity_alarms_page=0x7f05000d;
+        public static final int title_activity_alarms_page=0x7f05000e;
         public static final int title_activity_carbs_page=0x7f050007;
         public static final int title_activity_testing_page=0x7f050004;
     }
