@@ -26,13 +26,9 @@
     <string name="title_activity_alarms_page">AlarmsPageActivity</string>
     <string name="Alarms_Page_Top">Set an alarm for:</string>
     <string name="Alarms_Button">Alarms and Reminders</string>
-    <string name="Alarm_Message">Alarm Message:</string>
-    <string name="Your_Alarms">Your alarms:</string>
     <string name="Alarm_Setter">Set Alarm</string>
     <string name="title_activity_planner">PlannerActivity</string>
     
-    <string name="Planner_Page_Goal">Today\'s Carb Goal:</string>
-    <string name="Meal_1">Meal 1:</string>
-    <string name="Apx_Carbs">How many carbs?</string>
+    <string name="Planner_Page_Goal">Today's Carb Goal:</string>
 
 </resources>

@@ -42,6 +42,10 @@
             android:name="com.example.glunote.AlarmsPageActivity"
             android:label="@string/title_activity_alarms_page" >
         </activity>
+        <activity
+            android:name="com.example.glunote.PlannerActivity"
+            android:label="@string/title_activity_planner" >
+        </activity>
     </application>
 
 </manifest>
